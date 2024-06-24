@@ -9,6 +9,14 @@ static char *font = "Hack Nerd Font Mono:pixelsize=22:antialias=true:autohint=tr
 static int borderpx = 2;
 
 /*
+ * background image
+ * expects farbfeld format
+ * pseudo transparency fixes coordinates to the screen origin
+ */
+static const char *bgfile = "/home/aldosolisr/Wallpapers/Terminal/terminal.ff";
+static const int pseudotransparency = 1;
+
+/*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
  * 2: scroll and/or utmp
